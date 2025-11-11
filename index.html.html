@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fixon Technical Services</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="description" content="Fixon Technical Services — Professional maintenance, repair, and installation services in Dubai." />
+  <style>
+    /* Slide-in animation for floating buttons */
+    .slide-in {
+      transform: translateX(100%);
+      transition: transform 0.5s ease;
+    }
+    .slide-in.show {
+      transform: translateX(0);
+    }
+  </style>
+</head>
+<body class="antialiased text-gray-800">
+
+  <!-- NAV -->
+  <header class="fixed inset-x-0 top-0 bg-white/95 backdrop-blur-sm border-b z-40">
+    <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
+      <a href="#" class="flex items-center gap-3">
+        <!-- Logo Image -->
+        <img src="logo.png.jpeg" alt="Fixon Logo" class="w-10 h-10 rounded-md object-cover" />
+        <span class="font-semibold text-lg">Fixon Technical Services</span>
+      </a>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="#about" class="hover:text-yellow-500">About</a>
+        <a href="#services" class="hover:text-yellow-500">Services</a>
+        <a href="#why" class="hover:text-yellow-500">Why Us</a>
+        <a href="#testimonials" class="hover:text-yellow-500">Testimonials</a>
+        <a href="#contact" class="hover:text-yellow-500">Contact</a>
+      </nav>
+      <a href="tel:0524951957" class="hidden md:inline-block bg-yellow-500 text-black px-4 py-2 rounded-md font-medium">Call Now</a>
+      <button id="menuBtn" class="md:hidden p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="min-h-screen flex items-center justify-center bg-black text-white pt-16">
+    <div class="max-w-4xl text-center px-6">
+      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">Reliable Technical Services<br class="hidden sm:inline"> for Home & Business</h1>
+      <p class="mt-6 text-gray-300 max-w-2xl mx-auto">Fixon Technical Services provides professional electrical, plumbing, and AC maintenance solutions across Dubai — fast response, certified technicians, and guaranteed workmanship.</p>
+      <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#contact" class="bg-yellow-500 hover:bg-yellow-600 text-black px-6 py-3 rounded-full font-semibold">Get a Free Quote</a>
+        <a href="tel:0524951957" class="border border-yellow-500 text-yellow-500 px-6 py-3 rounded-full font-semibold hover:bg-yellow-500 hover:text-black">Call Now</a>
+      </div>
+      <div class="mt-10 text-sm text-gray-400">Available 24/7 • Serving residential & commercial clients</div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-20 bg-gray-50">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold text-yellow-500">About Fixon</h2>
+      <p class="mt-4 text-gray-700">Fixon Technical Services is a Dubai-based technical services company delivering high-quality repair, installation and maintenance services. Our technicians are licensed, trained, and committed to fast, professional service.</p>
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-lg shadow p-6">
+          <h3 class="font-semibold">Mission</h3>
+          <p class="mt-2 text-sm text-gray-600">Deliver dependable technical solutions with integrity and prompt support.</p>
+        </div>
+        <div class="bg-white rounded-lg shadow p-6">
+          <h3 class="font-semibold">Vision</h3>
+          <p class="mt-2 text-sm text-gray-600">Be the most trusted technical services partner for homes and businesses across the UAE.</p>
+        </div>
+        <div class="bg-white rounded-lg shadow p-6">
+          <h3 class="font-semibold">Values</h3>
+          <p class="mt-2 text-sm text-gray-600">Safety, quality, transparency, and customer satisfaction.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center text-yellow-500">Our Services</h2>
+      <p class="text-center mt-3 text-gray-600 max-w-2xl mx-auto">Comprehensive solutions tailored for residential and commercial clients.</p>
+      <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h4 class="font-semibold text-lg">Electrical Work</h4>
+          <p class="mt-2 text-sm text-gray-600">Installations, rewiring, fault finding, panel upgrades and emergency repairs.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h4 class="font-semibold text-lg">Plumbing</h4>
+          <p class="mt-2 text-sm text-gray-600">Leak repairs, pipe replacement, bathroom fittings, and drainage solutions.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h4 class="font-semibold text-lg">AC Maintenance</h4>
+          <p class="mt-2 text-sm text-gray-600">Routine servicing, gas top-up, fault diagnosis and repairs to all major brands.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h4 class="font-semibold text-lg">General Repairs</h4>
+          <p class="mt-2 text-sm text-gray-600">Door, window, and general handyman services for home and office.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h4 class="font-semibold text-lg">Preventive Maintenance</h4>
+          <p class="mt-2 text-sm text-gray-600">Scheduled maintenance packages for uninterrupted operations.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h4 class="font-semibold text-lg">Emergency Response</h4>
+          <p class="mt-2 text-sm text-gray-600">Rapid response team available 24/7 to address urgent issues.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-20 bg-gray-50">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold text-yellow-500">Get in Touch</h2>
+      <p class="mt-2 text-gray-600">Call or WhatsApp for immediate assistance.</p>
+      <p class="mt-4 text-gray-600 font-semibold">📞 0524951957 | 💬 +971 52 495 1957 | ✉️ fixontechnicalservices@gmail.com</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-black text-gray-200 py-8">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-6">
+      <div>
+        <h5 class="font-semibold text-white">Fixon Technical Services</h5>
+        <p class="mt-2 text-sm">Reliable maintenance & repair services across Dubai.</p>
+      </div>
+      <div>
+        <h5 class="font-semibold text-white">Quick Links</h5>
+        <ul class="mt-2 text-sm space-y-1">
+          <li><a href="#about" class="hover:text-yellow-400">About</a></li>
+          <li><a href="#services" class="hover:text-yellow-400">Services</a></li>
+          <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-semibold text-white">Contact</h5>
+        <p class="mt-2 text-sm">+971 52 495 1957<br/>fixontechnicalservices@gmail.com</p>
+        <p class="mt-4 text-xs text-gray-400">© 2025 Fixon Technical Services. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Buttons (Mobile Responsive & Slide-In) -->
+  <div id="floatingButtons" class="fixed right-5 bottom-5 flex flex-col gap-4 md:bottom-20 slide-in">
+    <!-- WhatsApp -->
+    <a href="https://wa.me/+971524951957" target="_blank" class="bg-green-500 text-white p-4 rounded-full shadow-lg flex items-center justify-center hover:scale-105 transition-transform" title="WhatsApp">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6">
+        <path d="M20.52 3.48A11.93 11.93 0 0012 0C5.37 0 0 5.37 0 12c0 2.11.55 4.09 1.58 5.86L0 24l6.32-1.65A11.9 11.9 0 0012 24c6.63 0 12-5.37 12-12 0-3.19-1.24-6.19-3.48-8.52z"/>
+      </svg>
+    </a>
+
+    <!-- Call -->
+    <a href="tel:0524951957" class="bg-gray-800 text-white p-4 rounded-full shadow-lg flex items-center justify-center hover:scale-105 transition-transform" title="Call">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6">
+        <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1v3.6a1 1 0 01-1 1A17 17 0 013 5a1 1 0 011-1h3.6a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.3 2.2z"/>
+      </svg>
+    </a>
+
+    <!-- Email -->
+    <a href="mailto:fixontechnicalservices@gmail.com" class="bg-red-600 text-white p-4 rounded-full shadow-lg flex items-center justify-center hover:scale-105 transition-transform" title="Email">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6">
+        <path d="M12 13.065L0 6V5l12 7 12-7v1l-12 7.065z"/>
+        <path d="M0 6.5v12.5h24V6.5l-12 7L0 6.5z"/>
+      </svg>
+    </a>
+  </div>
+
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menuBtn');
+    menuBtn.addEventListener('click', ()=> {
+      const nav = document.querySelector('header nav');
+      if (!nav) return;
+      nav.classList.toggle('hidden');
+    });
+
+    // Slide-in floating buttons on scroll
+    const floatingBtns = document.getElementById('floatingButtons');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 200) {
+        floatingBtns.classList.add('show');
+      } else {
+        floatingBtns.classList.remove('show');
+      }
+    });
+
+    // Initially show buttons
+    floatingBtns.classList.add('show');
+  </script>
+</body>
+</html>
